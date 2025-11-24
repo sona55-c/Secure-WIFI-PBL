@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Wi-Fi Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Secure Wi-Fi Simulation</h1>
+    <p>Simulate Open & Secure Wi-Fi, MAC Filtering, and Connected Devices</p>
+  </header>
+
+  <main>
+    <section id="wifi-login">
+      <h2>Connect to Wi-Fi</h2>
+      <label>SSID: </label>
+      <input type="text" id="ssid" placeholder="Enter network name"><br>
+      <label>Password: </label>
+      <input type="password" id="password" placeholder="Enter password"><br>
+      <label>MAC Address (optional for MAC filtering): </label>
+      <input type="text" id="mac" placeholder="AA:BB:CC:DD:EE:FF"><br>
+      <button onclick="connectWiFi()">Connect</button>
+      <p id="status"></p>
+    </section>
+
+    <section id="connected-devices">
+      <h2>Connected Devices</h2>
+      <pre id="log">No devices connected yet.</pre>
+    </section>
+
+    <section id="network-diagram">
+      <h2>Network Diagram</h2>
+      <img src="image/network-diagram.png" alt="Network Diagram" width="400">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Secure Wi-Fi PBL Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
